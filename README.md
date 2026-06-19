@@ -1,219 +1,94 @@
-# 每日一题分享网站
+# 每日一题分享
 
-一个基于 VitePress + GitHub Pages 的每日题目分享网站，使用 Markdown 编写，支持 Obsidian 编辑，自动部署。
+## 项目简介
+
+本项目重在分享日常遇到的各类题目，同时用来督促自己保持一定的练习量。通过每日坚持做题和分享，不断提升自己的能力。
+
+## 项目特点
+
+- 📅 **按日期组织**：题目按年/月/日分层存放，便于查阅和管理
+- 📝 **Markdown + PDF**：同时保存源文件和PDF，方便不同场景阅读
+- 🚀 **一键提交**：通过GUI工具一键上传并推送到GitHub
+- 📖 **Obsidian支持**：使用Obsidian编写，享受优秀的编辑体验
+
+## 目录结构
+
+```
+DailyShare/
+├── daily/                    # 题目目录
+│   ├── 2026/                 # 年份
+│   │   ├── 06/               # 月份
+│   │   │   ├── 19/           # 日期
+│   │   │   │   ├── xxx.md    # Markdown源文件
+│   │   │   │   └── xxx.pdf   # PDF文件
+│   │   │   │   ...
+├── gui.py                    # GUI管理工具
+├── setup.bat                 # 环境配置脚本
+├── 启动管理器.bat             # 快速启动
+└── README.md                 # 本文件
+```
 
 ## 快速开始
 
-### 1. 初始化项目
+### 1. 首次使用
 
 ```bash
-# 进入项目目录
-cd 每日一题
-
-# 安装依赖
-npm install
+# 双击运行 setup.bat 安装依赖
+# 或手动运行：
+pip install tkinter
 ```
 
-### 2. 本地预览
+### 2. 使用GUI工具
 
 ```bash
-npm run dev
+# 双击 启动管理器.bat
+# 或运行：
+python gui.py
 ```
 
-浏览器打开 `http://localhost:5173` 即可预览。
+### 3. 日常使用流程
 
-### 3. 创建 GitHub 仓库
+1. **编写题目**
+   - 打开Obsidian（点击GUI中的"打开Obsidian"按钮）
+   - 在对应日期文件夹下创建或编辑题目
+   - 可同时保存Markdown源文件和导出PDF
 
-1. 登录 GitHub，创建新仓库
-   - 仓库名：`daily-share`（或你喜欢的名字）
-   - 设为 **Public**
-   - 不要勾选初始化 README
+2. **上传题目**
+   - 点击"上传题目"按钮
+   - 选择要上传的文件（可同时选择.md和.pdf）
+   - 文件会自动按日期归档
 
-2. 记住你的仓库名，后面需要修改配置
+3. **提交到GitHub**
+   - 点击"提交到GitHub"按钮
+   - 等待推送完成
+   - 网站将在1-2分钟后自动更新
 
-### 4. 修改配置
+## Obsidian配置建议
 
-编辑 `docs/.vitepress/config.js`，修改两处：
+### 打开方式
 
-```js
-// 修改 base 为你的仓库名
-base: '/daily-share/',
+- **方式1**：点击GUI工具中的"打开Obsidian"按钮
+- **方式2**：直接用Obsidian打开本项目文件夹
+- **方式3**：双击项目文件夹，用Obsidian打开
 
-// 修改 GitHub 链接
-socialLinks: [
-  { icon: 'github', link: 'https://github.com/你的用户名/daily-share' }
-]
-```
+### 推荐插件
 
-### 5. 推送到 GitHub
+- **Obsidian Git**：自动同步Git变更
+- **Pandoc Plugin**：导出PDF文件
+- **Calendar**：按日历查看题目
 
-```bash
-git init
-git add .
-git commit -m "初始化项目"
-git branch -M main
-git remote add origin https://github.com/你的用户名/daily-share.git
-git push -u origin main
-```
+### 导出PDF
 
-### 6. 启用 GitHub Pages
+在Obsidian中编辑完成后，可通过以下方式导出PDF：
 
-1. 进入 GitHub 仓库 → Settings → Pages
-2. Source 选择 **GitHub Actions**
-3. 等待 Actions 运行完成（约 1-2 分钟）
-4. 访问 `https://你的用户名.github.io/daily-share/`
+1. 使用快捷键 `Ctrl+P` 打开命令面板
+2. 输入 "Export to PDF"
+3. 选择导出位置（建议放在同一日期文件夹下）
 
-## 日常使用
+## 联系方式
 
-### 添加新题目
-
-在 `docs/daily/` 文件夹下创建新的 Markdown 文件，建议用日期命名：
-
-```
-docs/daily/
-├── 2024-01-15.md
-├── 2024-01-16.md
-├── 2024-01-17.md
-└── index.md
-```
-
-### 文件模板
-
-```markdown
-# YYYY-MM-DD 每日一题
-
-## 题目：题目名称
-
-**难度**: 简单/中等/困难
-
-**标签**: 标签1, 标签2
-
----
-
-## 题目描述
-
-在这里写题目描述...
-
-## 示例
-
-在这里写示例...
-
-## 解题思路
-
-在这里写解题思路...
-
-## 参考资料
-
-在这里写参考资料...
-
----
-
-*今天的分享就到这里，明天见！ 👋*
-```
-
-### 推送更新
-
-```bash
-git add .
-git commit -m "添加新题目"
-git push
-```
-
-推送后会自动部署，1-2 分钟后即可访问。
-
-## Obsidian 配置
-
-如果使用 Obsidian 编辑，建议配置 Obsidian 的仓库根目录指向本项目。
-
-### 插件推荐
-
-- **Obsidian Git**: 自动同步 Git 变更
-- **Markdown Import/Export**: 方便导出
-
-### 目录结构
-
-```
-每日一题/
-├── docs/                    # VitePress 文档目录
-│   ├── .vitepress/          # VitePress 配置
-│   ├── daily/               # 每日题目
-│   │   ├── index.md         # 题目列表页
-│   │   ├── 2024-01-15.md    # 具体题目
-│   │   └── ...
-│   └── index.md             # 首页
-├── .github/workflows/       # GitHub Actions
-├── package.json
-└── README.md
-```
-
-## 自定义主题
-
-### 修改颜色
-
-编辑 `docs/.vitepress/config.js`，添加 `themeConfig` 配置：
-
-```js
-themeConfig: {
-  // ... 其他配置
-  siteTitle: '每日一题',
-}
-```
-
-### 自定义样式
-
-创建 `docs/.vitepress/theme/index.js`：
-
-```js
-import DefaultTheme from 'vitepress/theme'
-import './custom.css'
-
-export default DefaultTheme
-```
-
-创建 `docs/.vitepress/theme/custom.css`：
-
-```css
-:root {
-  --vp-c-brand-1: #your-color;
-  --vp-c-brand-2: #your-color-dark;
-}
-```
-
-## 常见问题
-
-### Q: 部署后页面 404？
-
-检查 `config.js` 中的 `base` 配置是否与仓库名一致。
-
-### Q: 中文路径有问题？
-
-确保文件名使用英文，内容可以用中文。
-
-### Q: 如何修改网站标题？
-
-编辑 `docs/.vitepress/config.js` 中的 `title` 和 `description`。
-
-### Q: 如何添加分类？
-
-可以使用 VitePress 的 frontmatter 功能：
-
-```markdown
----
-title: 题目名称
-date: 2024-01-15
-category: 数组
-difficulty: 简单
----
-```
-
-然后在配置中添加分类导航。
-
-## 参考资料
-
-- [VitePress 官方文档](https://vitepress.vuejs.org/)
-- [GitHub Pages 官方文档](https://docs.github.com/en/pages)
-- [Markdown 语法](https://www.markdownguide.org/)
+如有问题或建议，欢迎通过GitHub Issues反馈。
 
 ## 许可证
 
-MIT License
+本项目仅供学习交流使用。
