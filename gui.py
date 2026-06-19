@@ -140,7 +140,7 @@ class DailyShareApp:
         file_paths = filedialog.askopenfilenames(
             title="选择题目文件（可同时选择PDF和Markdown）",
             filetypes=[
-                ("题目文件", "*.md *.pdf"),
+                ("题目文件", "*.md;*.pdf"),
                 ("Markdown", "*.md"),
                 ("PDF", "*.pdf"),
                 ("所有文件", "*.*")
