@@ -34,9 +34,37 @@
               "icon": "lucide-file",
               "title": "2026.6.19题2"
             }
+          },
+          {
+            "id": "63911edcdc1c87f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026.6.19题3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026.6.19题3"
+            }
+          },
+          {
+            "id": "3180f6b89dbd8489",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026.6.19题4.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026.6.19题4"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -198,10 +226,12 @@
       "bases:新建数据库": false
     }
   },
-  "active": "00b684f9f4dde8df",
+  "active": "3180f6b89dbd8489",
   "lastOpenFiles": [
-    "2026.6.19题1.md",
+    "2026.6.19题3.md",
+    "2026.6.19题4.md",
     "2026.6.19题2.md",
+    "2026.6.19题1.md",
     "欢迎.md"
   ]
 }
