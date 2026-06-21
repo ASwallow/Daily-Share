@@ -8,77 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4d5a4bc8d6dd3f42",
+            "id": "04d41e70b2edbbc4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026.6.19题1.md",
+                "file": "2026.6.21题1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026.6.19题1"
-            }
-          },
-          {
-            "id": "00b684f9f4dde8df",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026.6.19题2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026.6.19题2"
-            }
-          },
-          {
-            "id": "63911edcdc1c87f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026.6.19题3.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026.6.19题3"
-            }
-          },
-          {
-            "id": "3180f6b89dbd8489",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026.6.19题4.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026.6.19题4"
-            }
-          },
-          {
-            "id": "52bc4fbbbcbd6a35",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026.6.20题1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026.6.20题1"
+              "title": "2026.6.21题1"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -240,10 +183,11 @@
       "bases:新建数据库": false
     }
   },
-  "active": "52bc4fbbbcbd6a35",
+  "active": "04d41e70b2edbbc4",
   "lastOpenFiles": [
-    "2026.6.19题4.md",
     "2026.6.20题1.md",
+    "2026.6.21题1.md",
+    "2026.6.19题4.md",
     "2026.6.19题1.md",
     "2026.6.19题2.md",
     "2026.6.19题3.md",
