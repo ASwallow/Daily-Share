@@ -8,90 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "aaaeed7a2ea7de78",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026.6.29题1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026.6.29题1"
-            }
-          },
-          {
-            "id": "666de0d083b71bf5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026.6.30题1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026.6.30题1"
-            }
-          },
-          {
-            "id": "73f63cb9503a6dff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026.7.1题1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026.7.1题1"
-            }
-          },
-          {
-            "id": "3a4df42e08035025",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026.7.2题1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026.7.2题1"
-            }
-          },
-          {
-            "id": "3655e14f4da6624d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026.7.3题1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026.7.3题1"
-            }
-          },
-          {
-            "id": "3ab131f9185716b4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026.7.4题1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026.7.4题1"
-            }
-          },
-          {
             "id": "5514ecece41ce48d",
             "type": "leaf",
             "state": {
@@ -104,9 +20,23 @@
               "icon": "lucide-file",
               "title": "2026.7.5题1"
             }
+          },
+          {
+            "id": "1621389c247944fb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026.7.6题1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026.7.6题1"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -268,10 +198,11 @@
       "bases:新建数据库": false
     }
   },
-  "active": "5514ecece41ce48d",
+  "active": "1621389c247944fb",
   "lastOpenFiles": [
-    "2026.7.4题1.md",
     "2026.7.5题1.md",
+    "2026.7.6题1.md",
+    "2026.7.4题1.md",
     "2026.7.3题1.md",
     "2026.7.2题1.md",
     "2026.7.1题1.md",
